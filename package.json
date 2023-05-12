@@ -7,7 +7,7 @@
     "react-router-dom": "^6.11.1"
   },
   "scripts": {
-    "client": "cd client && npm start"
+    "start": "cd client && npm start"
   },
   "devDependencies": {
     "concurrently": "^8.0.1"
