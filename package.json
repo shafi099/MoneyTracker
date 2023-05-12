@@ -4,5 +4,8 @@
     "cors": "^2.8.5",
     "mongoose": "^7.1.1",
     "react-router-dom": "^6.11.1"
+  },
+  "scripts": {
+    "client": "cd client && npm start"
   }
 }
