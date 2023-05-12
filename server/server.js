@@ -28,20 +28,26 @@ app.get('/', (req, res) => {
 
 app.post('/transactions', async (req, res) => {
   const { amount, details, date } = req.body;
-  try {
-    const transaction = new Transaction({
-      amount: amount,
-      details: details,
-      date: date,
-    });
 
+  if (!amount || !details) {
+    return res.status(400).json({ message: 'Amount and details are required' });
+  }
+
+  const transaction = new Transaction({
+    amount: amount,
+    details: details,
+    date: date,
+  });
+
+  try {
     await transaction.save();
     res.json(transaction);
   } catch (error) {
-    console.error('Error saving transaction:', error);
+    console.error("Error saving transaction:", error);
     res.status(500).json({ message: 'Error saving transaction' });
   }
 });
+
 
 app.get('/transactions', async (req, res) => {
   try {
