@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d3a28a28.css",
+    "main.js": "/static/js/main.7ed92fd3.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/SFrounded.ttf": "/static/media/SFrounded.1eeaf1332ceeea5b68db.ttf",
+    "static/media/SF-Pro-Display-Regular.ttf": "/static/media/SF-Pro-Display-Regular.67a29aa05d5c9a60406f.ttf",
+    "static/media/SF-Pro-Text-Semibold.otf": "/static/media/SF-Pro-Text-Semibold.5a6801937571c299234d.otf",
+    "static/media/Julietta-Messie.otf": "/static/media/Julietta-Messie.960240645ccfe96d221b.otf",
+    "static/media/SpaceMono-Regular.ttf": "/static/media/SpaceMono-Regular.8dc9dfb5a618f0d496e9.ttf",
+    "static/media/AgenorNeue-Regular.otf": "/static/media/AgenorNeue-Regular.ef55ba21ed9934a4bfe2.otf",
+    "static/media/mail.png": "/static/media/mail.69b7cf230003c361ecdb.png",
+    "static/media/Nadimopersonaluse-Thin.otf": "/static/media/Nadimopersonaluse-Thin.7f2e87b17a8f3e39399b.otf",
+    "static/media/deleteicon.png": "/static/media/deleteicon.a39a0f1608b14fc7e234.png",
+    "static/media/linkedin.png": "/static/media/linkedin.9a1a7f8162140e296345.png",
+    "index.html": "/index.html",
+    "main.d3a28a28.css.map": "/static/css/main.d3a28a28.css.map",
+    "main.7ed92fd3.js.map": "/static/js/main.7ed92fd3.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3a28a28.css",
+    "static/js/main.7ed92fd3.js"
+  ]
+}
