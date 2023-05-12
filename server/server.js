@@ -1,9 +1,9 @@
-const path = require('path');
+// const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const Transaction = require('./models/Transaction.js');
-const User = require('./models/User.js');
+// const User = require('./models/User.js');
 const app = express();
 const PORT = 4000;
 
