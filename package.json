@@ -7,5 +7,8 @@
   },
   "scripts": {
     "client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
   }
 }
