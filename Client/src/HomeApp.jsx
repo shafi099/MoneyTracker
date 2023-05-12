@@ -25,7 +25,7 @@ const HomeApp = () => {
       const [totalAmount, setTotalAmount] = useState(0);
     
       async function fetchTransactionData() {
-        const response = await fetch('http://localhost:4000/transactions');
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/transactions`);
         const data = await response.json();
     
         const sortedData = data.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -55,7 +55,7 @@ const HomeApp = () => {
     
       async function submitbtn(event) {
         event.preventDefault();
-        const response = await fetch('http://localhost:4000/transactions', {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/transactions`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -117,7 +117,7 @@ const HomeApp = () => {
       async function transactionDelete(id) {
         const confirmed = window.confirm("Are you sure you want to delete this transaction?");
         if (confirmed) {
-            await fetch(`http://localhost:4000/transactions/${id}`, {
+            await fetch(`${process.env.REACT_APP_API_URL}/transactions/${id}`, {
               method: 'DELETE',
             });
             fetchTransactionData();

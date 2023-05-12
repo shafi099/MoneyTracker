@@ -1,9 +1,12 @@
 const path = require('./path');
+import * as dotenv from 'dotenv'
+dotenv.config()
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const Transaction = require('./models/Transaction.js');
 // const User = require('./models/User.js');
+
 const app = express();
 const PORT = 4000;
 
