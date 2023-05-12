@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "Client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "client": "cd client && npm start",
+    "client": "cd Client && npm start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
