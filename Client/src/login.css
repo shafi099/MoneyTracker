@@ -1,46 +1,157 @@
 @font-face {
-    font-family: Nadimo;
-    src: url(Nadimopersonaluse-Thin.otf);
-  }
+  font-family: Nadimo;
+  src: url(Nadimopersonaluse-Thin.otf);
+}
+
+@font-face {
+  font-family: juliet;
+  src: url(Julietta-Messie.otf);
+}
+
+@font-face {
+  font-family: Agenor;
+  src: url(AgenorNeue-Regular.otf);
+}
+
+@font-face {
+  font-family: SpaceMono;
+  src: url(SpaceMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: SFreg;
+  src: url(SF-Pro-Display-Regular.ttf);
+}
+
+@font-face {
+  font-family: SFbold;
+  src: url(SF-Pro-Text-Semibold.otf);
+}
+
+@font-face {
+  font-family: SFround;
+  src: url(SFrounded.ttf);
+}
+
+body {
+  /* padding-top: 125px; */
+  margin: 0px;
+  background-color: #121212;
+  /* background-image: linear-gradient(to right top, #343333, #3a3737, #3f3c3c, #454040, #4b4544, #504a47, #554e4b, #59534e, #5e5852, #635d56, #68635a, #6d685e); */
+  /* scroll-padding-top: 52px;  */
+}
+@media screen and (min-width: 640px) {
+.logindiv{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:100%;
   
-  @font-face {
-    font-family: juliet;
-    src: url(Julietta-Messie.otf);
-  }
-  
-  @font-face {
-    font-family: Agenor;
-    src: url(AgenorNeue-Regular.otf);
-  }
-  
-  @font-face {
-    font-family: SpaceMono;
-    src: url(SpaceMono-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: SFreg;
-    src: url(SF-Pro-Display-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: SFbold;
-    src: url(SF-Pro-Text-Semibold.otf);
-  }
-  
-  @font-face {
-    font-family: SFround;
-    src: url(SFrounded.ttf);
-  }
-  
-  body {
-    /* padding-top: 125px; */
-    margin: 0px;
-    background-color: #121212;
-    /* background-image: linear-gradient(to right top, #343333, #3a3737, #3f3c3c, #454040, #4b4544, #504a47, #554e4b, #59534e, #5e5852, #635d56, #68635a, #6d685e); */
-    /* scroll-padding-top: 52px;  */
-  }
-  @media screen and (min-width: 640px) {
+}
+
+.welcomeText{
+  color:#fff8768e;
+  font-family: Agenor;
+margin-bottom: 10px;
+}
+.logintitle{
+  font-variant: small-caps;
+  font-size: 40px;
+  text-shadow: #343333;
+  text-shadow: 2px 2px 0px rgb(119, 20, 3);
+  color: #fff876;
+  font-family: nadimo;
+}
+
+.loginbtn{
+  padding: 5px 7px 5px 7px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #f9f151;
+  border-radius: 5px;
+  border: 0.1px solid #8d8d8d3e;
+  color: #080808;
+  font-family: SFround;
+  transition: all 0.3s ease;
+
+}
+
+.loginbtn:hover {
+  background-color: transparent;
+  color: #919090;
+  padding: 3px 7px 3px 7px;
+  font-size: 13px;
+}
+.logininput{
+  margin-top:15px;
+  margin-bottom:20px;
+  padding: 5px 23px 5px 23px;
+  width: 175px;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  font-family: SFround;
+  border: 0.1px solid #8d8d8d3e;
+}
+.contactportion {
+  font-family: juliet;
+  font-size: 22px;
+  margin-top:2px;
+  transition: all 0.3s ease;
+  display: flex;
+  font-weight: 100;
+  color: #693030;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.contact {
+  height: 27px;
+  width: 27px;
+  cursor: pointer;
+  /* opacity: 0.5s; */
+  border-radius: 50%;
+  padding: 0px 5px 0px 5px;
+}
+
+.contacticon {
+  height: 27px;
+  width: 27px;
+  cursor: pointer;
+  /* opacity: 0.5s; */
+  border-radius: 50%;
+  padding: 5px 10px 10px 10px;
+  transition: all 0.3s ease;
+  filter:invert(1) sepia(0%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.contacticon:hover {
+  height: 30px;
+  width: 30px;
+  transition: all 0.3s ease;
+  padding: 5px 10px 5px 10px;
+  background-color: #d1d1d1;
+}
+.created{
+  color:#ffffff8e;
+  font-family: SFround;
+margin-top: 40px;
+}
+.notetext{
+  font-family:SFround;
+  color:rgb(208, 206, 206);
+  text-align:center;
+}
+
+}
+
+
+@media screen and (max-device-width: 640px) {
   .logindiv{
     display: grid;
     justify-content: center;
@@ -52,12 +163,12 @@
 
   .welcomeText{
     color:#fff8768e;
-    font-family: Agenor;
+    font-family: SFround;
 margin-bottom: 10px;
   }
   .logintitle{
     font-variant: small-caps;
-    font-size: 40px;
+    font-size: 35px;
     text-shadow: #343333;
     text-shadow: 2px 2px 0px rgb(119, 20, 3);
     color: #fff876;
@@ -144,121 +255,9 @@ margin-top: 40px;
   }
   .notetext{
     font-family:SFround;
-    color:rgb(208, 206, 206);
+    color:rgb(153, 153, 153);
     text-align:center;
+    margin:40px 5px 0px 5px;
   }
+}
 
-  }
-
-
-  @media screen and (max-device-width: 640px) {
-    .logindiv{
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height:100%;
-      
-    }
-  
-    .welcomeText{
-      color:#fff8768e;
-      font-family: SFround;
-  margin-bottom: 10px;
-    }
-    .logintitle{
-      font-variant: small-caps;
-      font-size: 35px;
-      text-shadow: #343333;
-      text-shadow: 2px 2px 0px rgb(119, 20, 3);
-      color: #fff876;
-      font-family: nadimo;
-    }
-  
-    .loginbtn{
-      padding: 5px 7px 5px 7px;
-      text-align: center;
-      border-radius: 4px;
-      background-color: #f9f151;
-      border-radius: 5px;
-      border: 0.1px solid #8d8d8d3e;
-      color: #080808;
-      font-family: SFround;
-      transition: all 0.3s ease;
-  
-    }
-  
-    .loginbtn:hover {
-      background-color: transparent;
-      color: #919090;
-      padding: 3px 7px 3px 7px;
-      font-size: 13px;
-    }
-    .logininput{
-      margin-top:15px;
-      margin-bottom:20px;
-      padding: 5px 23px 5px 23px;
-      width: 175px;
-      text-align: center;
-      background-color: #1a1a1a;
-      border-radius: 5px;
-      color: white;
-      font-size: 12px;
-      font-family: SFround;
-      border: 0.1px solid #8d8d8d3e;
-    }
-    .contactportion {
-      font-family: juliet;
-      font-size: 22px;
-      margin-top:2px;
-      transition: all 0.3s ease;
-      display: flex;
-      font-weight: 100;
-      color: #693030;
-      justify-content: center;
-      align-items: center;
-      opacity: 1;
-    }
-  
-    .contact {
-      height: 27px;
-      width: 27px;
-      cursor: pointer;
-      /* opacity: 0.5s; */
-      border-radius: 50%;
-      padding: 0px 5px 0px 5px;
-    }
-  
-    .contacticon {
-      height: 27px;
-      width: 27px;
-      cursor: pointer;
-      /* opacity: 0.5s; */
-      border-radius: 50%;
-      padding: 5px 10px 10px 10px;
-      transition: all 0.3s ease;
-      filter:invert(1) sepia(0%);
-      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-    }
-  
-    .contacticon:hover {
-      height: 30px;
-      width: 30px;
-      transition: all 0.3s ease;
-      padding: 5px 10px 5px 10px;
-      background-color: #d1d1d1;
-    }
-    .created{
-      color:#ffffff8e;
-      font-family: SFround;
-  margin-top: 40px;
-    }
-    .notetext{
-      font-family:SFround;
-      color:rgb(153, 153, 153);
-      text-align:center;
-      margin:40px 5px 0px 5px;
-    }
-  }
-
-  

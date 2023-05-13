@@ -5,28 +5,28 @@ import { Link, useNavigate } from 'react-router-dom';
 
   const LoginForm = (props) => {
     const navigate = useNavigate();
-    const [name, setName] = useState(props.name);
+    // const [name, setName] = useState(props.name);
   
   
     const handleLogin = async () => {
-      setName(name)
-      console.log(name)
-      try {
-        const response = await fetch('/api/createUser', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ name }),
-        });
-        if (response.ok) {
-          navigate('/HomeApp');
-        } else {
-          console.error('Failed to create user');
-        }
-      } catch (error) {
-        console.error('An error occurred', error);
-      }
+      // setName(name)
+      // console.log(name)
+      // try {
+      //   const response = await fetch('/api/createUser', {
+      //     method: 'POST',
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //     },
+      //     body: JSON.stringify({ name }),
+      //   });
+      //   if (response.ok) {
+      //     navigate('/HomeApp');
+      //   } else {
+      //     console.error('Failed to create user');
+      //   }
+      // } catch (error) {
+      //   console.error('An error occurred', error);
+      // }
       navigate('/HomeApp');
     };
 
