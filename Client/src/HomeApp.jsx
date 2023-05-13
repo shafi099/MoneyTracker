@@ -25,7 +25,8 @@ const HomeApp = () => {
       const [totalAmount, setTotalAmount] = useState(0);
     
       async function fetchTransactionData() {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/transactions`);
+        const response = await fetch('http://localhost:4000/transactions');
+
         const data = await response.json();
     
         const sortedData = data.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -53,18 +54,19 @@ const HomeApp = () => {
         setFormData({ ...formData, [event.target.name]: event.target.value });
       };
     
-      async function submitbtn(event) {
-        event.preventDefault();
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/transactions`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData),
-        });
-        const data = await response.json();
-        fetchTransactionData();
-      }
+     async function submitbtn(event) {
+  event.preventDefault();
+  const response = await fetch('http://localhost:4000/transactions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData),
+  });
+  const data = await response.json();
+  fetchTransactionData();
+}
+
     
       const formatDate = (dateString) => {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -114,10 +116,13 @@ const HomeApp = () => {
           setamountorder('asec');
         }
       };
+
+
       async function transactionDelete(id) {
         const confirmed = window.confirm("Are you sure you want to delete this transaction?");
         if (confirmed) {
-            await fetch(`${process.env.REACT_APP_API_URL}/transactions/${id}`, {
+
+            await fetch(`https://localhost:4000/transactions/${id}`, {
               method: 'DELETE',
             });
             fetchTransactionData();

@@ -1,12 +1,8 @@
-const path = require('./path');
-import * as dotenv from 'dotenv'
-dotenv.config()
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const Transaction = require('./models/Transaction.js');
-// const User = require('./models/User.js');
-
 const app = express();
 const PORT = 4000;
 
@@ -14,7 +10,11 @@ const mongoose = require('mongoose');
 
 const connectToDatabase = async () => {
   try {
-    await mongoose.connect("mongodb+srv://shaikshafieluru:Shafi12345@shafi-financetrackerpro.niqdna8.mongodb.net/?retryWrites=true&w=majority");
+    await mongoose.connect("mongodb+srv://shaikshafieluru:Shafi12345@shafi-financetrackerpro.niqdna8.mongodb.net/?retryWrites=true&w=majority", {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    });
+    console.log('Connected to MongoDB');
   } catch (error) {
     console.error('Error connecting to MongoDB:', error);
   }
@@ -51,7 +51,6 @@ app.post('/transactions', async (req, res) => {
   }
 });
 
-
 app.get('/transactions', async (req, res) => {
   try {
     const transactions = await Transaction.find({}).sort({ createdAt: 1 });
@@ -72,10 +71,11 @@ app.delete('/transactions/:id', async (req, res) => {
   }
 });
 
-app.use(express.static(path.join(__dirname, '')))
-app.get('*',function(req,res){
-  res.sendFile(path.join(__dirname,"./client/build/index.html"))
-})
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
