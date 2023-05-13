@@ -122,7 +122,7 @@ const HomeApp = () => {
         const confirmed = window.confirm("Are you sure you want to delete this transaction?");
         if (confirmed) {
 
-            await fetch(`https://localhost:4000/transactions/${id}`, {
+            await fetch(`http://localhost:4000/transactions/${id}`, {
               method: 'DELETE',
             });
             fetchTransactionData();
