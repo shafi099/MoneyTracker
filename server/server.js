@@ -8,7 +8,7 @@ const Transaction = require('./models/Transaction.js');
 const User = require('./models/User.js');
 const TransactionRouters = require('./routes/transactionsAPI.js');
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 dotenv.config();
 
 async function connectToDatabase() {
