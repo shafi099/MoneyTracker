@@ -142,6 +142,11 @@ margin-bottom: 10px;
     font-family: SFround;
 margin-top: 40px;
   }
+  .notetext{
+    font-family:SFround;
+    color:rgb(208, 206, 206);
+    text-align:center;
+  }
 
   }
 
@@ -247,6 +252,12 @@ margin-top: 40px;
       color:#ffffff8e;
       font-family: SFround;
   margin-top: 40px;
+    }
+    .notetext{
+      font-family:SFround;
+      color:rgb(153, 153, 153);
+      text-align:center;
+      margin:40px 5px 0px 5px;
     }
   }
 
