@@ -8,6 +8,7 @@ const PORT = 4000;
 
 const mongoose = require('mongoose');
 
+
 const connectToDatabase = async () => {
   try {
     await mongoose.connect("mongodb+srv://shaikshafieluru:Shafi12345@shafi-financetrackerpro.niqdna8.mongodb.net/?retryWrites=true&w=majority", {
