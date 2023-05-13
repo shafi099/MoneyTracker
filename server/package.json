@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "mongoose": "^7.1.1"
+  }
+}
