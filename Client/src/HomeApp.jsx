@@ -28,7 +28,7 @@ const HomeApp = () => {
         const response = await fetch(`${process.env.REACT_APP_API_URL}/transactions`);
         const data = await response.json();
     
-        const sortedData = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+        const sortedData = [...data].sort((a, b) => new Date(b.date) - new Date(a.date));
         setTransactions(sortedData);
     
         const cash = data.reduce((total, transaction) => total + transaction.amount, 0);
