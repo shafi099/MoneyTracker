@@ -2,7 +2,8 @@
   "scripts": {
     "start": "npm run start:client & npm run start:server",
     "start:client": "cd client && npm start",
-    "start:server": "cd server && npm start"
+    "start:server": "cd server && node server.js",
+    "build": "cd client && npm run build"
   },
   "dependencies": {
     "cors": "^2.8.5",
