@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "start:server": "node server.js"
   },
   "keywords": [],
   "author": "",
