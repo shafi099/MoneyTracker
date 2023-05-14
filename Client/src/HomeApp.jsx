@@ -146,6 +146,7 @@ const HomeApp = () => {
         </div>
       ))}
     </div>
+    <div className='notetext'>Note : This App is under development. You can access availaible features</div>
     <Feedback/>
   </>
   )
