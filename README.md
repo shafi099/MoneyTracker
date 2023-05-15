@@ -4,7 +4,7 @@ Website link: [Coin Tracker](https://tubular-starship-f4c8df.netlify.app/)
 
 ## Project Description
 
-Coin Tracker is a comprehensive web application built using the MERN (MongoDB, Express.js, React, Node.js) stack. It provides users with a powerful and user-friendly platform to track and monitor cryptocurrency prices, portfolios, and market trends.
+Coin Tracker is a comprehensive web application built using the MERN (MongoDB, Express.js, React, Node.js) stack. It provides users with a powerful and user-friendly platform to track and monitor expemses and set budgets.
 
 
 ## Skills Used
