@@ -2,21 +2,22 @@ import React from 'react'
 import './login.css'
 import Contact from './Contact'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const Register = () => {
     // const history = useHistory();
+    const navigate=useNavigate()
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
   
-    const handleSubmit = async (e) => {
+    const handleSubmit = async(e) => {
       e.preventDefault();
-      console.log('Form submitted:', { firstName, lastName, email, password });
-    
+      // console.log('Form submitted:', { firstName, lastName, email, password });
+      
       const form = {
         firstName,
         lastName,
@@ -38,6 +39,7 @@ const Register = () => {
       } catch (error) {
         console.error('Error occurred:', error);
       }
+      navigate('/HomeApp')
     };
     
       
