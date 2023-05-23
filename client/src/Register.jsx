@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 const Register = () => {
     // const history = useHistory();
     const [firstName, setFirstName] = useState('');
@@ -91,9 +92,11 @@ const Register = () => {
             Get Started
           </button>
           <Link to="/" className="no-underline">
-            <span className="Alreadyhave">Already have an account? Sign in</span>
+            <br></br><span className="Alreadyhave">Already have an account? Sign in</span>
           </Link>
-  
+          <Link to='/HomeApp' className='no-underline'>
+      <br/><span className='Alreadyhave'>To skip this process...Click here for Demo </span>
+      </Link>
           <span className="created">©Shafi Shaik</span>
           <Contact />
   
