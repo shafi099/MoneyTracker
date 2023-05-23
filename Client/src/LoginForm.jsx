@@ -35,10 +35,19 @@ import { Link, useNavigate } from 'react-router-dom';
     <div className="logindiv">
       <span className='welcomeText'>Welcome to,</span>
       <span className='logintitle'>₹CoinTracker</span>
-      <span><input type="text" name='details' placeholder="Enter Your Name" className='logininput' /></span>
+      <span className='welcomeText'>Sign In</span>
+      <span><input type="text" name='details' placeholder="Email Address" className='logininput' /></span>
+      <span><input type="text" name='details' placeholder="Password" className='logininput' /></span>
       <Link to='/HomeApp' className="no-underline">
       
       <button onClick={handleLogin} className='loginbtn'>Get Started</button>
+
+      </Link>
+      <Link to='/Register' className='no-underline'>
+      <br/><span className='Alreadyhave'>Don't have an account?Create </span>
+      </Link>
+      <Link to='/HomeApp' className='no-underline'>
+      <br/><span className='Alreadyhave'>To skip this process...Click here for Demo </span>
       </Link>
       <span className="created">©Shafi Shaik</span>
       <Contact/>

@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const Transaction = require('./models/Transaction.js');
 const User = require('./models/User.js');
 const TransactionRouters = require('./routes/transactionsAPI.js');
+const AuthAPI = require('./routes/AuthApi.js');
 const app = express();
 const PORT = process.env.PORT || 4000;
 dotenv.config();
@@ -25,7 +26,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/', TransactionRouters);
-
+app.use('/auth',AuthAPI)
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));

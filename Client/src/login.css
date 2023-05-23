@@ -51,7 +51,8 @@ body {
 }
 
 .welcomeText{
-  color:#fff8768e;
+  padding-top:10px;
+  color:#ddd;
   font-family: Agenor;
 margin-bottom: 10px;
 }
@@ -65,7 +66,7 @@ margin-bottom: 10px;
 }
 
 .loginbtn{
-  padding: 5px 7px 5px 7px;
+  padding: 5px 13px 5px 13px;
   text-align: center;
   border-radius: 4px;
   background-color: #f9f151;
@@ -74,25 +75,25 @@ margin-bottom: 10px;
   color: #080808;
   font-family: SFround;
   transition: all 0.3s ease;
-
+margin-bottom: 12px;
 }
 
 .loginbtn:hover {
   background-color: transparent;
   color: #919090;
-  padding: 3px 7px 3px 7px;
+  padding: 5px 10px 5px 10px;
   font-size: 13px;
 }
 .logininput{
-  margin-top:15px;
-  margin-bottom:20px;
-  padding: 5px 23px 5px 23px;
-  width: 175px;
-  text-align: center;
+  margin-top:7px;
+  margin-bottom:10px;
+  padding: 10px 23px 10px 23px;
+  width: 205px;
+  text-align:start;
   background-color: #1a1a1a;
   border-radius: 5px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   font-family: SFround;
   border: 0.1px solid #8d8d8d3e;
 }
@@ -146,6 +147,56 @@ margin-top: 40px;
   font-family:SFround;
   color:rgb(208, 206, 206);
   text-align:center;
+  font-size: 14px;
+}
+.register{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 12px;;
+}
+.registerinput{
+  margin-top:8px;
+  margin-bottom:8px;
+  padding: 10px 10px 10px 10px;
+  width: 175px;
+  text-align: start;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-family: SFround;
+  border: 0.1px solid #8d8d8d3e;
+}
+.registername{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:5px;
+}
+.registeremailinput{
+  margin-top:8px;
+  margin-bottom:8px;
+  padding: 10px 110px 10px 110px;
+  width: 175px;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-family: SFround;
+  border: 0.1px solid #8d8d8d3e;
+}
+.Alreadyhave{
+  margin-top: 10px;
+  font-family: SFround;
+  color:#eaf856;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 }
@@ -162,7 +213,8 @@ margin-top: 40px;
   }
 
   .welcomeText{
-    color:#fff8768e;
+    
+    color:#ddd;
     font-family: SFround;
 margin-bottom: 10px;
   }
@@ -176,7 +228,7 @@ margin-bottom: 10px;
   }
 
   .loginbtn{
-    padding: 5px 7px 5px 7px;
+    padding: 5px 13px 5px 13px;
     text-align: center;
     border-radius: 4px;
     background-color: #f9f151;
@@ -191,7 +243,7 @@ margin-bottom: 10px;
   .loginbtn:hover {
     background-color: transparent;
     color: #919090;
-    padding: 3px 7px 3px 7px;
+    padding: 5px 9px 5px 9px;
     font-size: 13px;
   }
   .logininput{
@@ -251,13 +303,57 @@ margin-bottom: 10px;
   .created{
     color:#ffffff8e;
     font-family: SFround;
-margin-top: 40px;
+margin-top: 32px;
+font-size: 14px;
   }
   .notetext{
     font-family:SFround;
     color:rgb(153, 153, 153);
     text-align:center;
+    font-size: 12px;
     margin:40px 5px 0px 5px;
+  }
+  .register{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 8px;;
+  }
+  .registerinput{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding: 8px 23px 8px 23px;
+    width: 210px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-family: SFround;
+    border: 0.1px solid #8d8d8d3e;
+  }
+  .registeremailinput{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding: 8px 23px 8px 23px;
+    width: 210px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-family: SFround;
+    border: 0.1px solid #8d8d8d3e;
+  }
+  .Alreadyhave{
+    margin-top: 15px;
+    font-family: SFround;
+    color:#eaf856;
+    font-size: 10px;
+    text-decoration: underline;
   }
 }
 
