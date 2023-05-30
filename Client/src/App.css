@@ -711,3 +711,15 @@ body {
   gap:10px;
 }
 }
+
+.cursor {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #fff876;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.3s;
+  pointer-events: none;
+  z-index: 1200;
+}
+
