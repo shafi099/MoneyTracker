@@ -7,13 +7,26 @@ import { Routes, Route } from "react-router-dom";
 import { Cursor } from "./Cursor";
 
 function App() {
+  
+
+  useEffect(() => {
+    window.addEventListener("mousemove", dotCursor);
+
+  
+
+    return () => {
+      window.removeEventListener("mousemove", dotCursor);
+    };
+  }, []);
+
   return (
     <Routes>
-    <Cursor />
+    
       <Route path="/" element={<LoginForm />} />
       <Route path="/Register" element={<Register />} />
       {/* <Route path="/" element={<Register />}/> */}
       <Route path="/HomeApp" element={<HomeApp />} />
+      <Cursor />
     </Routes>
 
     
