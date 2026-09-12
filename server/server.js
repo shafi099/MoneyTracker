@@ -22,7 +22,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('Hello Shafi');
+  res.send('Hello Brothers');
 });
 
 app.use('/', TransactionRouters);
